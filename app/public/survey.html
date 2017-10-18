@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder</title>
+
+	<!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!--viewport tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+                  
+</head>
+
+<body>
+	<div class= "container">
+		<div class="jumbotron">
+      <h2 class="text-center"><span class="glyphicon glyphicon-user"></span> Friend Finder<h2>
+    </div>
+    <div class="row">
+      <div class='col s12'>
+            <h5>Survey Questions</h5>
+            <div class='card-panel left-align white'>
+                <p><span style="font-weight:600">About You</span></p>
+                <input id="user-name" type="text" class="validate" required>
+                <label class='active'>Name (required)</label>
+                <input id="user-photo" type="text" class="validate" required>
+                <label class='active'>Link to Photo Image (required)</label>
+                <br>
+                <br>
+                <p><span style="font-weight:600">Question 1: </span>I see myself as extroverted, enthusiastic.</p>
+                <select data-placeholder="" class="browser-default" id="question-1">
+                    <option value="" class= "placeholderText">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 2: </span>I see myself as critical, quarrelsome.</p>
+                <select data-placeholder="" class="browser-default" id="question-2">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 3: </span>I see myself as dependable, self-disciplined.</p>
+                <select data-placeholder="" class="browser-default" id="question-3">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 4: </span>I see myself as anxious, easily upset.</p>
+                <select data-placeholder="" class="browser-default" id="question-4">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 5: </span>I see myself as open to new experiences.</p>
+                <select data-placeholder="" class="browser-default" id="question-5">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 6: </span>I see myself as reserved, quiet</p>
+                <select data-placeholder="" class="browser-default" id="question-6">
+                    <option value="">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 7: </span>I see myself as sympathetic.</p>
+                <select data-placeholder="" class="browser-default" id="question-7">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 8: </span>I see myself as disorganized.</p>
+                <select data-placeholder="" class="browser-default" id="question-8">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 9: </span>I see myself as calm, emotionally stable.</p>
+                <select data-placeholder="" class="browser-default" id="question-9">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <p><span style="font-weight:600">Question 10: </span>I see myself as practical, conventional.</p>
+                <select data-placeholder="" class="browser-default" id="question-10">
+                    <option value="">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+          <button type="submit" class="btn btn-primary submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--container div-->
+
+    <!--footer div--> 
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friend Link</a> | <a href="https://github.com/smsharp/friendFinder.git">GitHub Repo</a></p>
+      </div>
+    </footer>
+    
+    <!--modal div for displaying match-->
+    <div id="resultsModal" class="modal">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title"><strong>Best Match</strong></h4>
+          </div>
+          <div class="modal-body">
+            <h5 id="matchName"></h5>
+            <img id="matchImg" class="materialboxed" height="300" src="">
+          </div>
+          <div class="modal-footer">
+            <a href="/survey" class="modal-action modal-close waves-effect btn-flat">Take Survey Again!</a>
+          </div>
+        </div>
+    </div>
+
+  <!-- HOW FORM DATA IS SENT TO OUR SERVER -->
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('select').material_select();
+
+      $('.modal').modal({
+        dismissible: false, // Modal can be dismissed by clicking outside of the modal
+        opacity: .5, // Opacity of modal background
+        inDuration: 300, // Transition in duration
+        outDuration: 200, // Transition out duration
+        startingTop: '4%', // Starting top style attribute
+        endingTop: '10%' // Ending top style attribute
+      });
+    
+
+      //Create the Front-end JavaScript which "POSTS" our form data to our express server/api.
+      $(".submit").on("click", function(event) {
+        event.preventDefault();
+
+        function validateForm() {
+            var isValid = true;
+            $('.validate').each(function() {
+                if ($(this).val() === ''){
+                    isValid = false;
+                }
+            });
+            $('.browser-default').each(function() {
+                if ($(this).val() === ""){
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
+        //if everything is filled
+        if (validateForm() == true) {
+
+          //Grab the form elements
+          var userData = {
+            name: $("#user-name").val().trim(),
+            photo: $("#user-photo").val().trim(),
+            scores: [
+              $('#question-1').val().trim(),
+              $('#question-2').val().trim(),
+              $('#question-3').val().trim(),
+              $('#question-4').val().trim(),
+              $('#question-5').val().trim(),
+              $('#question-6').val().trim(),
+              $('#question-7').val().trim(),
+              $('#question-8').val().trim(),
+              $('#question-9').val().trim(),
+              $('#question-10').val().trim()
+            ]
+          };
+          console.log(userData);
+
+          //Give it a URL, give it the object we want to send, then we have a "callback".
+          $.post("/api/friends", userData, function(data) {
+            // Set the name and image values of friend match
+        		$('#matchName').html(data.matchName);
+  		    	$("#matchImg").attr("src", data.matchImage);
+
+  		    	// Pop open the modal dialog
+        		$('#resultsModal').modal('open');
+            $(".close").on("click", function() {
+              $('#resultsModal').modal('close');
+            });
+          });
+
+        } else {
+            alert("Please answer all questions before submitting survey!")
+        }
+      });
+  });
+  </script>
+
+</body>
+</html>

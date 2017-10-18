@@ -1,0 +1,17 @@
+{
+  "name": "FriendFinder",
+  "description": "A Basic Dating App.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "path": "^0.12.7"
+  },
+
+  "author": "Sara Sharp",
+  "license": "ISC",
+  "repository": {
+    "type": "",
+    "url": "https://github.com/smsharp/friendFinder.git"
+  }
+}
