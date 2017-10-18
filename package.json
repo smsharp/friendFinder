@@ -1,6 +1,6 @@
 {
   "name": "FriendFinder",
-  "description": "A Basic Dating App.",
+  "description": "A Friend Finding App.",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.0",
