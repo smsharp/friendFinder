@@ -8,7 +8,7 @@ This application is a simple friend finder enabling users to take a survey and m
 
 Try it out on Heroku: 
 
-To run the customer interface please follow the steps below:
+To run the app locally please download the repository zip file, unzip, and follow the steps below:
 
 	https://github.com/smsharp/friendFinder.git
 	cd friendfinder
