@@ -6,11 +6,10 @@ This application is a simple friend finder enabling users to take a survey and m
 
 ### How to Run Friend Finder
 
-Try it out on Heroku: 
+Try it out on Heroku: https://nameless-shelf-76028.herokuapp.com/
 
 To run the app locally please download the repository zip file, unzip, and follow the steps below:
 
-	https://github.com/smsharp/friendFinder.git
 	cd friendfinder
 	npm install express
 	npm install path
