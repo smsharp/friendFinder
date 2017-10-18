@@ -14,5 +14,5 @@ To run the customer interface please follow the steps below:
 	cd friendfinder
 	npm install express
 	npm install path
-  npm install body-parser
-  node server.js
+  	npm install body-parser
+  	node server.js
